@@ -27,7 +27,7 @@
         <div class="nav">
             <div class="container">
                 <div>
-                    <h3 class="footer-explore">DC comics</h3>
+                    <h3 class="footer-explore">DC COMICS</h3>
                     <ul>
                         <li><a class="links" href="#">Characters</a></li>
                         <li><a class="links" href="#">Comics</a></li>
@@ -37,7 +37,7 @@
                         <li><a class="links" href="#">Videos</a></li>
                         <li><a class="links" href="#">News</a></li>
                     </ul>
-                    <h3 class="footer-explore">Shop</h3>
+                    <h3 class="footer-explore">SHOP</h3>
                     <ul>
                         <li><a href="#">Shop DC</a></li>
                         <li><a href="#">Shop DC Collectibles</a></li>
@@ -60,7 +60,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="footer-explore">Sites</h3>
+                    <h3 class="footer-explore">SITES</h3>
                     <ul>
                         <li><a href="#">DC</a></li>
                         <li><a href="#">MAD Magazine</a></li>
@@ -74,7 +74,7 @@
         </div>
         <div class="footer-cta">
             <div class="container">
-                <a class="button" href="#">Sign-up now!</a>
+                <a class="button" href="#">SIGN UP NOW!</a>
                 <div class="socials">
                     <h3>Follow us</h3>
                     <ul class="social-list">
@@ -149,7 +149,7 @@
             }
 
             a {
-                color: gray;
+                color: grey;
                 font-size: 12px;
             }
 
@@ -158,8 +158,7 @@
             }
 
             .footer-explore {
-                padding-top: 15px;
-                padding-bottom: 15px;
+                padding: 15px 0 15px;
             }
 
         
@@ -178,8 +177,9 @@
 
             .button {
                 display: block;
-                padding: 8px 12px;
+                padding: 10px 15px;
                 border: 2px solid #0282f9;
+                font-weight: bold;
                 margin-right: auto;
                 text-transform: uppercase;
             }
