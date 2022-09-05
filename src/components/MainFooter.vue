@@ -78,11 +78,11 @@
                 <div class="socials">
                     <h3>Follow us</h3>
                     <ul class="social-list">
-                        <li><a href="#"><img src="../assets/footer-facebook.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/footer-twitter.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/footer-youtube.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/footer-pinterest.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/footer-periscope.png" alt=""></a></li>
+                        <li><a class="socialbutton" href="#"><img src="../assets/footer-facebook.png" alt=""></a></li>
+                        <li><a class="socialbutton" href="#"><img src="../assets/footer-twitter.png" alt=""></a></li>
+                        <li><a class="socialbutton" href="#"><img src="../assets/footer-youtube.png" alt=""></a></li>
+                        <li><a class="socialbutton" href="#"><img src="../assets/footer-pinterest.png" alt=""></a></li>
+                        <li><a class="socialbutton" href="#"><img src="../assets/footer-periscope.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -153,6 +153,10 @@
                 font-size: 12px;
             }
 
+            a:hover {
+                color: white;
+            }
+
             .footer-explore {
                 padding-top: 15px;
                 padding-bottom: 15px;
@@ -195,6 +199,10 @@
                 .social-list {
                     display: flex;
                     gap: 1rem;
+                }
+
+                .socialbutton:hover {
+                    opacity: 0.5;
                 }
             }
         }
