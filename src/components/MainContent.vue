@@ -45,6 +45,12 @@ import comics from '../dc-comics.js'
               color: white;
               background-color: black;
           }
+
+          .list {
+            display: flex;
+            flex-wrap: nowrap; 
+            margin-bottom: 50px;
+          }
     }
 
 </style>
