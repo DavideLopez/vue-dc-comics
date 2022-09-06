@@ -2,39 +2,12 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="../assets/dc-logo.png" alt="DC Comics logo">
+                <img src="../assets/dc-logo.png" alt="DClogo">
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Characters</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Comics</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Movies</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Tv</a>
-                    </li>
-                    <li class="nav-item  active">
-                        <a class="nav-link" href="#">Games</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Collectibles</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Videos</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Fans</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Shop</a>
+                    <li v-for="(link, index) in links" :key="index" class="nav-item">
+                        <a class="nav-link" href="link.href">{{ link.text }}</a>
                     </li>
                 </ul>
             </nav>
@@ -44,7 +17,66 @@
 
 
 <script>
+
+    const links = [
+        {
+            text: 'characters',
+            href: '#',
+            active: true
+        },
+        {
+            text: 'comics',
+            href: '#',
+            active: true
+        },
+        {
+            text: 'movies',
+            href: '#',
+            active: true
+        },
+        {
+            text: 'TV',
+            href: '#',
+            active: true
+        },
+        {
+            text: 'games',
+            href: '#',
+            active: true
+        },
+        {
+            text: 'collectibles',
+            href: '#',
+            active: true
+        },
+        {
+            text: 'video',
+            href: '#',
+            active: true
+        },
+        {
+            text: 'fans',
+            href: '#',
+            active: true
+        },
+        {
+            text: 'news',
+            href: '#',
+            active: true
+        },
+        {
+            text: 'shop',
+            href: '#',
+            active: true
+        },
+    ]
+
     export default {
+        data() {
+            return {
+                links: links
+            }
+        }
 
     }
 </script>
