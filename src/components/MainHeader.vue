@@ -103,18 +103,18 @@
         }
 
         .nav {
-            &-list {
+            .nav-list {
                 display: flex;
                 align-items: center;
                 font-weight: bold;
                 font-size: 14px;
             }
 
-            &-item.active:hover {
+            .nav-link:hover {
                 border-bottom: 5px solid #0282f9;
             }
             
-            &-link {
+            .nav-link {
                 padding: 0 12px;
                 line-height: 1.5rem;
                 text-transform: uppercase;

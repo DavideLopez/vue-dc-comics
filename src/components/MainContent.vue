@@ -1,11 +1,14 @@
 <template>
     <main>
      <div class="jumbo">
+        <div class="container">
+            <h1 class="jumbo-title">CURRENT SERIES</h1>
+        </div>
 
      </div>
      <div class="series">
         <div class="container list">
-             <ProductCard class="fumetti" v-for="(serie,index) in series" :key="index" :src="serie.thumb" :title="serie=series"/>
+             <ProductCard class="fumetti" v-for="(serie,index) in series" :key="index" :src="serie.thumb" :title="serie.series"/>
         </div>
         <div class="container cta">
             <a href="#"> LOAD MORE </a>
@@ -23,7 +26,7 @@ import series from '../dc-comics.js'
 
     export default {
     components: { 
-        ProductCard 
+        ProductCard,
     },
     data() {
         return {
@@ -39,10 +42,26 @@ import series from '../dc-comics.js'
        .jumbo {
          height: 400px;
          background: url('../assets/jumbotron.jpg');
+
+         .container {
+                height: 400px;
+                position: relative;
+            }
+
+            .jumbo-title {
+                padding: 0.5rem 1rem;
+                position: absolute;
+                bottom: 0;
+                left: 1rem;
+                transform: translateY(+50%);
+                background-color: #0282f9;
+                color: white;
+                
+            }
        }
           .series {
               padding: 3rem;
-              color: white;
+              color: red;   // COLORE DA CAMBIARE
               background-color: black;
           }
 
@@ -65,6 +84,7 @@ import series from '../dc-comics.js'
                 padding: 12px 30px;
                 line-height: 25px;
                 background-color: #0282f9;
+                font-weight: bold;
             }
 
             a:hover {
