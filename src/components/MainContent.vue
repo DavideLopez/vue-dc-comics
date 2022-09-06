@@ -61,7 +61,7 @@ import series from '../dc-comics.js'
        }
           .series {
               padding: 3rem;
-              color: red;   // COLORE DA CAMBIARE
+              color: white;
               background-color: black;
           }
 
@@ -72,7 +72,7 @@ import series from '../dc-comics.js'
           }
 
           .fumetti {
-            flex-basis: 185px;
+            flex-basis: 0;
             flex-grow: 1;
             padding: 0 0 10px;
           }
