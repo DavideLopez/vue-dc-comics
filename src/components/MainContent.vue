@@ -44,7 +44,7 @@
             }
 
             .hero-title {
-                padding: 0.5rem 1rem;
+                padding: 10px 20px;
                 position: absolute;
                 bottom: 0;
                 left: 1rem;
@@ -60,15 +60,15 @@
             background-color: #1c1c1c;
 
             .serie-list {
-                margin-bottom: 1.5rem;
+                margin-bottom: 25px;
                 display: flex;
                 flex-wrap: wrap;
-                gap: 1.5rem;
+                gap: 25px;
 
                 .serie-item {
-                    flex-basis: 185px;
+                    flex-basis: 200px;
                     flex-grow: 1;
-                    padding: 0 0.75rem;
+                    padding: 0 15px;
                 }
             }
 
