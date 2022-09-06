@@ -52,13 +52,11 @@
 <style lang="scss" scoped>
     header {
         padding: 1rem 0;
-        background-color: #fff;
 
         .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 1rem;
         }
 
         .logo {
@@ -76,13 +74,12 @@
             &-list {
                 display: flex;
                 align-items: center;
-                gap: 1rem;
                 font-weight: bold;
+                font-size: 14px;
             }
 
             &-item.active:hover {
                 border-bottom: 5px solid #0282f9;
-                
             }
             
             &-link {

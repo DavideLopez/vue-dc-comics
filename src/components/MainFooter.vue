@@ -101,8 +101,8 @@
 
 <style lang="scss" scoped>
     .features {
-        padding: 3rem 0;
         background-color: #0282f9;
+        padding: 3rem 0;
 
         .feature-list {
             display: flex;
@@ -117,7 +117,7 @@
             justify-content: center;
             align-items: center;
             gap: 12px;
-            color: #fff;
+            color: white;
             text-transform: uppercase;
 
             img {
@@ -129,10 +129,10 @@
     }
 
     .nav {
-        padding: 3rem 0;
-        background: url('../assets/footer-bg.jpg') center/cover no-repeat #1c1c1c;
-        color: #fff;
+        background: url('../assets/footer-bg.jpg');
+        color: white;
         overflow: hidden;
+        padding: 3rem 0;
 
         .container {
             display: flex;
@@ -140,7 +140,6 @@
             position: relative;
 
             img {
-                width: 560px;
                 margin-left: auto;
                 position: absolute;
                 top: 50%;
@@ -168,7 +167,6 @@
     .footer-cta {
         padding: 1.5rem 0;
         background-color: #303030;
-        color: #fff;
 
         .container {
             display: flex;
@@ -182,6 +180,7 @@
                 font-weight: bold;
                 margin-right: auto;
                 text-transform: uppercase;
+                color: white;
             }
 
             .button:hover {
