@@ -3,9 +3,9 @@
      <div class="jumbo">
 
      </div>
-     <div class="comics">
+     <div class="series">
         <div class="container list">
-             <ProductCard class="fumetti" v-for="(serie,index) in comics" :key="index" :src="serie.thumb" :title="serie=comics"/>
+             <ProductCard class="fumetti" v-for="(serie,index) in series" :key="index" :src="serie.thumb" :title="serie=series"/>
         </div>
         <div class="container cta">
             <a href="#"> LOAD MORE </a>
@@ -19,7 +19,7 @@
 
 <script>
 import ProductCard from './ProductCard.vue';
-import comics from '../dc-comics.js'
+import series from '../dc-comics.js'
 
     export default {
     components: { 
@@ -27,7 +27,7 @@ import comics from '../dc-comics.js'
     },
     data() {
         return {
-            comics: comics
+            series: series
         }
     }
 }
@@ -40,7 +40,7 @@ import comics from '../dc-comics.js'
          height: 400px;
          background: url('../assets/jumbotron.jpg');
        }
-          .comics {
+          .series {
               padding: 3rem;
               color: white;
               background-color: black;
@@ -51,6 +51,28 @@ import comics from '../dc-comics.js'
             flex-wrap: nowrap; 
             margin-bottom: 50px;
           }
+
+          .fumetti {
+            flex-basis: 185px;
+            flex-grow: 1;
+            padding: 0 0 10px;
+          }
+
+          .cta {
+            text-align: center;
+
+            a {
+                padding: 12px 30px;
+                line-height: 25px;
+                background-color: #0282f9;
+            }
+
+            a:hover {
+                opacity: 0.5;
+            }
+          }
     }
+
+    
 
 </style>
